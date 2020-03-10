@@ -1,10 +1,9 @@
-class FizzBuzz:
-    def
-
 def fizzbuzz(number):
-    retStr = ""
-    if int(number) % 3 == 0:
-        retStr += "Fizz"
-    if int(number) % 5 == 0:
-        retStr += "Buzz"
-    elif 
+    if number % 3 == 0 and number % 5 == 0:
+        return "FizzBuzz"
+    elif number % 5 == 0:
+        return "Buzz"
+    elif number % 3 == 0:
+        return "Fizz"
+    else:
+        return str(number)
